@@ -1,7 +1,6 @@
 # hello-world
 
-Hello Guys,
+Hello Everyone
 
-  Saeed here, from Pakistan, working as a network engineer, worked on cisco products 
-  
+  This is Saeed Ali from Pakistan, Working as a network Consultant.
   
