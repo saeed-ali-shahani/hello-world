@@ -1,3 +1,11 @@
+vlans:
+ - id: 100
+   name: users
+ - id: 200
+   name: iot
+ - id: 300
+   name: wifi
+
 {% for vlan in vlans %}
 vlan {{vlan.id}}
   name {{vlan.name}}
