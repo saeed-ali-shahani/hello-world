@@ -1,3 +1,4 @@
-aaa new-model
-
-username abc pri 15 password xyz
+{% for vlan in vlans %}
+vlan {{vlan.id}}
+  name {{vlan.name}}
+{% endfor %}
