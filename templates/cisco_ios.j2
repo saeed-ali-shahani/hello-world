@@ -1,1 +1,9 @@
-hostname {{ obj.name }}
+{
+  "ntp": {
+    "server": [
+      {% for server in ntp_servers %}
+      "{{ server }}",
+      {% endfor %}
+    ]
+  }
+}
