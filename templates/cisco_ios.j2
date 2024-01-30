@@ -1,9 +1,3 @@
-{
-  "ntp": {
-    "server": [
-      {% for server in ntp_servers %}
-      "{{ server }}",
-      {% endfor %}
-    ]
-  }
-}
+{% for server in ntp.server %}
+ntp server {{ server }}
+{% endfor %}
