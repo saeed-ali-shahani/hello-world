@@ -1,4 +1,6 @@
-hostname {{ hostname }}
-{% for server in ntp %}
-ntp server {{ server }}
+aaa_new_model: {{ config_context.aaa_new_model }}
+cdp: {{ config_context.cdp }}
+{% for ntp_server in config_context.ntp %}
+  NTP Server IP: {{ ntp_server.ip }}
+  Prefer: {{ ntp_server.prefer }}
 {% endfor %}
