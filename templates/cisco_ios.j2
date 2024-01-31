@@ -1,4 +1,3 @@
-{% for ntp_server in config_context.ntp %}
-  NTP Server IP: {{ ntp_server.ip }}
-  Prefer: {{ ntp_server.prefer }}
+{% for server in config_context.ntp_servers %}
+ntp server {{ server }}
 {% endfor %}
