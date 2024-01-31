@@ -1,10 +1,4 @@
-{
-    "ntp": [
-        "172.16.10.22",
-        "172.16.12.33"
-    ]
-}
-
+hostname {{ hostname }}
 {% for server in ntp %}
 ntp server {{ server }}
 {% endfor %}
