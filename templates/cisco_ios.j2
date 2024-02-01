@@ -1,4 +1,4 @@
-{% for server in config_context.ntp_servers %}
+{% for server in ntp_servers %}
 ntp server {{ server }}
 {% endfor %}
-hostname {{ hostname }}
+hostname {{ name[0] }}
